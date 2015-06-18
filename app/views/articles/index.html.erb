@@ -1,9 +1,9 @@
-<h1> All Articles </h1>
+<center><h1> All Articles </h1></center>
 
 <ul id="Articles">
 	<% @articles.each do |article| %>
 	<li>
-		<%= link_to article.title, article_path(article) %>
+		<%= link_to article.title, article_path(article) %><br />
 	</li>
 	<% end %>
 </ul>
